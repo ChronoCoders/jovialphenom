@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "title": "Seductive Flow",
+    "description": "A mesmerizing blend of sensual R&B and lo-fi hip-hop that creates an intimate sonic experience.",
+    "duration": "3:45",
+    "featured": true,
+    "imageUrl": "/assets/seductive-flow.png",
+    "audioUrl": "/assets/Seductive Flow_1751839140526.mp3",
+    "streamingUrls": {
+      "spotify": "https://open.spotify.com/track/3rYEhqbvTUMWb6RtZkcKXl",
+      "appleMusic": "https://music.apple.com/ca/artist/jovial-phenom/1790666838",
+      "soundcloud": "https://soundcloud.com/jovial-phenom"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Thick Vibes",
+    "description": "Deep, atmospheric production with lush textures and hypnotic rhythms.",
+    "duration": "4:12",
+    "featured": true,
+    "imageUrl": "/assets/thick-vibes.png",
+    "audioUrl": "/assets/Thick Vibes_1751839140521.mp3",
+    "streamingUrls": {
+      "spotify": "https://open.spotify.com/track/3rYEhqbvTUMWb6RtZkcKXl",
+      "appleMusic": "https://music.apple.com/ca/artist/jovial-phenom/1790666838",
+      "soundcloud": "https://soundcloud.com/jovial-phenom"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Sweet Sting",
+    "description": "Intimate and provocative track with silky smooth production.",
+    "duration": "3:28",
+    "featured": false,
+    "imageUrl": "/assets/sweet-sting.png",
+    "audioUrl": "/assets/Sweet Sting_1751839140525.mp3",
+    "streamingUrls": {
+      "spotify": "https://open.spotify.com/track/3rYEhqbvTUMWb6RtZkcKXl",
+      "appleMusic": "https://music.apple.com/ca/artist/jovial-phenom/1790666838",
+      "soundcloud": "https://soundcloud.com/jovial-phenom"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Racks on My Mind",
+    "description": "Confident and ambitious track about success and determination.",
+    "duration": "3:52",
+    "featured": false,
+    "imageUrl": "/assets/racks-on-my-mind.png",
+    "audioUrl": "/assets/Racks on My Mind_1751839140520.mp3",
+    "streamingUrls": {
+      "spotify": "https://open.spotify.com/track/3rYEhqbvTUMWb6RtZkcKXl",
+      "appleMusic": "https://music.apple.com/ca/artist/jovial-phenom/1790666838",
+      "soundcloud": "https://soundcloud.com/jovial-phenom"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Crown me now",
+    "description": "Empowering anthem about claiming your rightful place.",
+    "duration": "4:05",
+    "featured": false,
+    "imageUrl": "/assets/crown-me-now.png",
+    "audioUrl": "/assets/Crown me now_1751839140526.mp3",
+    "streamingUrls": {
+      "spotify": "https://open.spotify.com/track/3rYEhqbvTUMWb6RtZkcKXl",
+      "appleMusic": "https://music.apple.com/ca/artist/jovial-phenom/1790666838",
+      "soundcloud": "https://soundcloud.com/jovial-phenom"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Lip Service",
+    "description": "Smooth and sultry track with captivating melodies.",
+    "duration": "3:33",
+    "featured": false,
+    "imageUrl": "/assets/lip-service.png",
+    "audioUrl": "/assets/Lip Service_1751839140524.mp3",
+    "streamingUrls": {
+      "spotify": "https://open.spotify.com/track/3rYEhqbvTUMWb6RtZkcKXl",
+      "appleMusic": "https://music.apple.com/ca/artist/jovial-phenom/1790666838",
+      "soundcloud": "https://soundcloud.com/jovial-phenom"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Chasing Smoke",
+    "description": "Atmospheric track about pursuing elusive dreams.",
+    "duration": "4:18",
+    "featured": false,
+    "imageUrl": "/assets/chasing-smoke.png",
+    "audioUrl": "/assets/Chasing Smoke_1751839140525.mp3",
+    "streamingUrls": {
+      "spotify": "https://open.spotify.com/track/3rYEhqbvTUMWb6RtZkcKXl",
+      "appleMusic": "https://music.apple.com/ca/artist/jovial-phenom/1790666838",
+      "soundcloud": "https://soundcloud.com/jovial-phenom"
+    }
+  },
+  {
+    "id": 8,
+    "title": "Shining On My Own",
+    "description": "Independent and confident track about self-reliance.",
+    "duration": "3:47",
+    "featured": false,
+    "imageUrl": "/assets/shining-on-my-own.png",
+    "audioUrl": "/assets/Shining On My Own_1751839140519.mp3",
+    "streamingUrls": {
+      "spotify": "https://open.spotify.com/track/3rYEhqbvTUMWb6RtZkcKXl",
+      "appleMusic": "https://music.apple.com/ca/artist/jovial-phenom/1790666838",
+      "soundcloud": "https://soundcloud.com/jovial-phenom"
+    }
+  }
+]

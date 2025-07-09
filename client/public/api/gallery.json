@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "imageUrl": "/assets/sweet-sting.png",
+    "caption": "Sweet Sting - Album artwork featuring intimate and provocative aesthetic",
+    "category": "album-artwork",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "imageUrl": "/assets/lip-service.png", 
+    "caption": "Lip Service - Promotional photoshoot capturing the essence of smooth R&B",
+    "category": "promotional",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "imageUrl": "/assets/seductive-flow.png",
+    "caption": "Seductive Flow - Studio session documenting the creative process",
+    "category": "behind-the-scenes",
+    "featured": true
+  }
+]

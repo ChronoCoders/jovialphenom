@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Seductive Flow",
+    "description": "A mesmerizing blend of sensual R&B and lo-fi hip-hop that creates an intimate sonic experience.",
+    "duration": "3:45",
+    "featured": true,
+    "imageUrl": "/assets/seductive-flow.png",
+    "audioUrl": "/assets/Seductive Flow_1751839140526.mp3",
+    "streamingUrls": {
+      "spotify": "https://open.spotify.com/track/3rYEhqbvTUMWb6RtZkcKXl",
+      "appleMusic": "https://music.apple.com/ca/artist/jovial-phenom/1790666838",
+      "soundcloud": "https://soundcloud.com/jovial-phenom"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Thick Vibes",
+    "description": "Deep, atmospheric production with lush textures and hypnotic rhythms.",
+    "duration": "4:12",
+    "featured": true,
+    "imageUrl": "/assets/thick-vibes.png",
+    "audioUrl": "/assets/Thick Vibes_1751839140521.mp3",
+    "streamingUrls": {
+      "spotify": "https://open.spotify.com/track/3rYEhqbvTUMWb6RtZkcKXl",
+      "appleMusic": "https://music.apple.com/ca/artist/jovial-phenom/1790666838",
+      "soundcloud": "https://soundcloud.com/jovial-phenom"
+    }
+  }
+]

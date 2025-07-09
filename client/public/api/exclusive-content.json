@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "Producer Commentary: 'Sweet Sting'",
+    "description": "An intimate behind-the-scenes look at the creation of 'Sweet Sting', including the inspiration, production techniques, and personal stories behind this provocative track.",
+    "type": "video",
+    "contentUrl": "/assets/sweet-sting-commentary.mp4",
+    "thumbnailUrl": "/assets/sweet-sting.png",
+    "duration": "8:34",
+    "isActive": true,
+    "releaseDate": "2024-12-01"
+  },
+  {
+    "id": 2,
+    "title": "Stems Pack: 'Thick Vibes'",
+    "description": "Download the individual stems from 'Thick Vibes' for your own remixes and creative projects. Includes drums, bass, keys, and vocal layers.",
+    "type": "download",
+    "contentUrl": "/assets/thick-vibes-stems.zip",
+    "thumbnailUrl": "/assets/thick-vibes.png",
+    "fileSize": "45.2 MB",
+    "isActive": true,
+    "releaseDate": "2024-11-15"
+  },
+  {
+    "id": 3,
+    "title": "Tech Talk: AI in Music Production",
+    "description": "Jovial Phenom shares insights on incorporating artificial intelligence tools into the creative process while maintaining authentic human emotion in music.",
+    "type": "article",
+    "contentUrl": "/exclusive/ai-music-production",
+    "thumbnailUrl": "/assets/jovial-phenom.jpeg",
+    "readTime": "12 min read",
+    "isActive": true,
+    "releaseDate": "2024-10-30"
+  }
+]

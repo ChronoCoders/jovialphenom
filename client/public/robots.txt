@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://jovialphenom.com/sitemap.xml
+
+# Allow all crawlers to access main content
+Allow: /
+Allow: /privacy-policy
+Allow: /terms-of-service
+Allow: /fair-use
+Allow: /disclaimer
+
+# Disallow admin areas
+Disallow: /admin

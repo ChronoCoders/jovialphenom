@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "publication": "Muse Chronicle",
+    "title": "Seductive Flow: Where AI Meets Soul in Modern R&B",
+    "excerpt": "Jovial Phenom's latest single demonstrates a masterful blend of technology and emotion, creating something entirely new in the lo-fi hip-hop space.",
+    "url": "https://musechronicle.com/seductive-flow-review",
+    "publishedAt": "2024-12-15",
+    "imageUrl": "/assets/sweet-sting.png"
+  },
+  {
+    "id": 2,
+    "publication": "Plastic Magazine",
+    "title": "The Future of Music Production: An Interview with Jovial Phenom",
+    "excerpt": "We sit down with the innovative producer to discuss how artificial intelligence is reshaping the creative process in music production.",
+    "url": "https://plasticmagazine.com/jovial-phenom-interview",
+    "publishedAt": "2024-11-28",
+    "imageUrl": "/assets/seductive-flow.png"
+  },
+  {
+    "id": 3,
+    "publication": "Rotate Magazine",
+    "title": "Thick Vibes: A Deep Dive into Atmospheric Production",
+    "excerpt": "Analyzing the production techniques behind one of the year's most compelling lo-fi hip-hop tracks.",
+    "url": "https://rotatemagazine.com/thick-vibes-analysis",
+    "publishedAt": "2024-10-22",
+    "imageUrl": "/assets/thick-vibes.png"
+  },
+  {
+    "id": 4,
+    "publication": "HipHopEargasm",
+    "title": "Rising Stars: Jovial Phenom's Unique Sound",
+    "excerpt": "Breaking down the unique sonic palette that sets this NYC-based producer apart from the crowd.",
+    "url": "https://hiphopyeargasm.com/jovial-phenom-rising",
+    "publishedAt": "2024-09-30",
+    "imageUrl": "/assets/sweet-sting.png"
+  }
+]

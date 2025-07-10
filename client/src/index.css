@@ -69,22 +69,12 @@
 
 @layer utilities {
   .gradient-text {
-    color: var(--accent-gold);
-    text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
-    display: inline-block;
-    position: relative;
-  }
-  
-  .gradient-text::before {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
     background: linear-gradient(135deg, var(--accent-gold), var(--accent-orange));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    z-index: 1;
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+    display: inline-block;
   }
   
   .glass-card {

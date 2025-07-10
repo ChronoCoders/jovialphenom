@@ -60,8 +60,8 @@ export default function Hero() {
         <div className="max-w-4xl">
           <div className="animate-fade-in">
             <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
-              <span className="gradient-text" data-text="Jovial">Jovial</span><br />
-              <span className="gradient-text" data-text="Phenom">Phenom</span>
+              <span className="gradient-text">Jovial</span><br />
+              <span className="gradient-text">Phenom</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl">
               Sensual lo-fi hip-hop meets R&B. Where technology and soul collide to create hypnotic soundscapes.

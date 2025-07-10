@@ -7,6 +7,7 @@ import { AudioPlayerProvider } from "@/hooks/use-audio-player";
 import { useEffect } from "react";
 import { initGA } from "./lib/analytics";
 import { useAnalytics } from "./hooks/use-analytics";
+import { ErrorBoundary } from "./components/error-boundary";
 import Home from "@/pages/home";
 import AdminPanel from "@/pages/admin";
 import NotFound from "@/pages/not-found";
@@ -36,23 +37,31 @@ function Router() {
 function App() {
   // Initialize Google Analytics when app loads
   useEffect(() => {
-    // Verify required environment variable is present
-    if (!import.meta.env.VITE_GA_MEASUREMENT_ID) {
-      console.warn('Missing required Google Analytics key: VITE_GA_MEASUREMENT_ID');
-    } else {
-      initGA();
+    try {
+      // Verify required environment variable is present
+      if (!import.meta.env.VITE_GA_MEASUREMENT_ID) {
+        console.warn('Missing required Google Analytics key: VITE_GA_MEASUREMENT_ID');
+      } else {
+        initGA();
+      }
+    } catch (error) {
+      console.error('Analytics initialization error:', error);
     }
   }, []);
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <AudioPlayerProvider>
-        <TooltipProvider>
-          <Toaster />
-          <Router />
-        </TooltipProvider>
-      </AudioPlayerProvider>
-    </QueryClientProvider>
+    <ErrorBoundary>
+      <QueryClientProvider client={queryClient}>
+        <AudioPlayerProvider>
+          <TooltipProvider>
+            <div className="min-h-screen">
+              <Toaster />
+              <Router />
+            </div>
+          </TooltipProvider>
+        </AudioPlayerProvider>
+      </QueryClientProvider>
+    </ErrorBoundary>
   );
 }
 

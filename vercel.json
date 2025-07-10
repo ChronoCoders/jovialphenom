@@ -6,10 +6,6 @@
     {
       "source": "/assets/(.*)",
       "destination": "/attached_assets/$1"
-    },
-    {
-      "source": "/api/(.*)",
-      "destination": "/api/server.js"
     }
   ]
 }

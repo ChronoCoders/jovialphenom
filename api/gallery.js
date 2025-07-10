@@ -4,6 +4,16 @@ export default function handler(req, res) {
       id: 1,
       imageUrl: "/assets/sweet-sting.png",
       caption: "Sweet Sting - Album Art"
+    },
+    {
+      id: 2,
+      imageUrl: "/assets/lip-service.png",
+      caption: "Lip Service - Artwork"
+    },
+    {
+      id: 3,
+      imageUrl: "/assets/seductive-flow.png",
+      caption: "Seductive Flow - Cover Art"
     }
   ];
   

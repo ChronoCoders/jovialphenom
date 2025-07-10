@@ -6,7 +6,7 @@ export default function handler(req, res) {
       description: "A mesmerizing blend of lo-fi hip-hop and R&B that takes you on a sensual journey through urban landscapes.",
       duration: "3:45",
       imageUrl: "/assets/seductive-flow.png",
-      audioUrl: null,
+      audioUrl: "/assets/Seductive Flow_1751839140526.mp3",
       isFeatured: true
     }
   ];

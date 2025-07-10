@@ -2,10 +2,5 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist/public",
   "installCommand": "npm install",
-  "rewrites": [
-    {
-      "source": "/assets/(.*)",
-      "destination": "/attached_assets/$1"
-    }
-  ]
+  "rewrites": []
 }

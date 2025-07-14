@@ -27,7 +27,7 @@ export default function Press() {
     <section id="press" className="py-20 bg-[var(--bg-secondary)]">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 gradient-text" data-text="Press Coverage">Press Coverage</h2>
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 gradient-text">Press Coverage</h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             What the music industry is saying about Jovial Phenom's unique sound and artistic vision.
           </p>

@@ -73,8 +73,20 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
     display: inline-block;
+    /* Fallback for browsers that don't support background-clip */
+    color: var(--accent-gold);
+    /* Support for modern browsers */
+    background-size: 200% 100%;
+    animation: gradientShift 3s ease infinite;
+  }
+  
+  /* Ensure gradient text works in all browsers */
+  @supports not (-webkit-background-clip: text) {
+    .gradient-text {
+      color: var(--accent-gold);
+      text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+    }
   }
   
   .glass-card {
@@ -147,6 +159,18 @@
   }
   50% {
     opacity: 0.5;
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 

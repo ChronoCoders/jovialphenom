@@ -1,21 +1,8 @@
-# Jovial Phenom Music Portfolio Website
+# Jovial Phenom Music Portfolio
 
 ## Overview
 
-This is a full-stack web application for Jovial Phenom, a lo-fi hip-hop and R&B music producer from New York. The application serves as a comprehensive music portfolio featuring streaming capabilities, press coverage, gallery sections, exclusive content, and fan engagement tools. The site combines modern web technologies with a sophisticated music-focused design system.
-
-## Recent Changes (January 14, 2025)
-
-✓ Completely removed Vercel deployment configuration and serverless functions
-✓ Restored pure Express.js backend architecture with unified API routes
-✓ Fixed asset structure by moving files to correct client/public/assets/ location
-✓ Cleaned up attached_assets folder confusion and corrected all asset references
-✓ Project now platform-agnostic and ready for any deployment environment
-✓ All API endpoints working correctly with 200 responses in Express server
-✓ Fixed gradient text rendering issue in Press Coverage section with cross-browser compatibility
-✓ Created comprehensive Windows IIS deployment guide with SSL support
-✓ Added Apache deployment configuration for Linux hosting
-✓ Created Windows batch files for easy development and production startup
+This is a full-stack music portfolio website for Jovial Phenom, a lo-fi hip-hop and R&B music producer from New York. The application combines a React frontend with an Express.js backend, featuring music streaming, contact forms, newsletter subscriptions, and administrative capabilities. The project emphasizes a sleek, modern aesthetic with integrated audio playback and social media connectivity.
 
 ## User Preferences
 
@@ -23,89 +10,90 @@ Preferred communication style: Simple, everyday language.
 
 ## System Architecture
 
-The application follows a modern full-stack architecture with a clear separation between client and server responsibilities:
+The application follows a monorepo structure with clear separation between client, server, and shared code:
 
-- **Frontend**: React-based SPA using Vite for fast development and building
-- **Backend**: Express.js REST API with TypeScript
+- **Frontend**: React 18 with TypeScript, using Vite for bundling and Tailwind CSS for styling
+- **Backend**: Express.js with TypeScript serving both API endpoints and static assets
 - **Database**: PostgreSQL with Drizzle ORM for type-safe database operations
-- **Styling**: Tailwind CSS with shadcn/ui components for consistent design
-- **Deployment**: Platform-agnostic (Express.js server)
+- **Deployment**: PM2 process management with support for Windows IIS and Apache servers
+- **Styling**: shadcn/ui component library with custom design system for music industry aesthetics
 
 ## Key Components
 
 ### Frontend Architecture
-- **Framework**: React 18 with TypeScript
-- **Build Tool**: Vite for fast development and optimized production builds
+- **Framework**: React 18 with TypeScript and ES modules
 - **Routing**: Wouter for lightweight client-side routing
-- **State Management**: TanStack Query for server state management
-- **UI Library**: Radix UI components with shadcn/ui styling system
-- **Styling**: Tailwind CSS with custom CSS variables for theming
+- **State Management**: TanStack Query for server state and React hooks for local state
+- **Audio System**: Custom audio player context for global music playback control
+- **UI Components**: shadcn/ui with Radix primitives for accessibility
+- **Analytics**: Google Analytics integration with event tracking
 
 ### Backend Architecture
-- **Runtime**: Node.js with Express.js framework
-- **Language**: TypeScript for type safety
-- **Database ORM**: Drizzle with PostgreSQL dialect
-- **Session Management**: Connect-pg-simple for PostgreSQL session storage
-- **Email**: SendGrid integration for contact forms and newsletters
+- **Server**: Express.js with TypeScript serving RESTful APIs
+- **File Serving**: Static asset serving for music files and images
+- **Development**: Vite middleware integration for hot reloading
+- **Process Management**: PM2 configuration for production deployment
 
 ### Database Schema
-The database includes tables for:
-- `tracks`: Music tracks with metadata and streaming URLs
-- `press_articles`: Press coverage and reviews
-- `gallery_images`: Visual content with categorization
-- `contact_submissions`: User inquiries and messages
-- `newsletters`: Email subscriptions for fan engagement
-- `exclusive_content`: Premium content for subscribers
-- `admin_users`: Administrative access control
-- `streaming_stats`: Analytics for music streaming
+- **Tracks**: Music metadata with streaming links and featured status
+- **Press Articles**: Media coverage with publications and ratings
+- **Gallery Images**: Visual content with categorization
+- **Contact Submissions**: User inquiries with timestamps
+- **Newsletter**: Email subscriptions with opt-out capability
+- **Exclusive Content**: Premium content for subscribers
+- **Admin Users**: Administrative access control
+- **Streaming Stats**: Platform-specific play counts and metrics
+
+### Audio Player System
+- **Global Context**: Centralized audio playback state across components
+- **Track Management**: Play, pause, seek, and volume controls
+- **Multiple Formats**: Support for MP3 streaming and downloads
+- **Progress Tracking**: Real-time playback position updates
 
 ## Data Flow
 
-1. **Music Streaming**: Audio files are served statically with a custom audio player context for global playback control
-2. **Content Management**: Static JSON files serve as a content source with plans for database integration
-3. **User Interactions**: Forms submit to API endpoints that store data in PostgreSQL
-4. **Analytics**: Google Analytics integration for user behavior tracking
-5. **SEO**: Structured data and comprehensive meta tags for search optimization
+1. **Client Requests**: React components use TanStack Query for API calls
+2. **API Processing**: Express routes handle CRUD operations via Drizzle ORM
+3. **Database Operations**: PostgreSQL stores structured music and user data
+4. **Real-time Updates**: Query invalidation triggers UI updates
+5. **Asset Delivery**: Static files served directly by Express for optimal performance
 
 ## External Dependencies
 
-### Core Dependencies
-- **@neondatabase/serverless**: PostgreSQL database connection
-- **@tanstack/react-query**: Server state management
-- **@radix-ui/***: Headless UI components
-- **drizzle-orm**: Type-safe database ORM
-- **@sendgrid/mail**: Email service integration
+### Core Technologies
+- **React Ecosystem**: React 18, React Hook Form, React Query
+- **Database**: PostgreSQL via Neon serverless with Drizzle ORM
+- **UI Framework**: Radix UI primitives with Tailwind CSS
+- **Email Service**: SendGrid for newsletter and contact form delivery
+- **Analytics**: Google Analytics 4 for user behavior tracking
+
+### Music Industry Integrations
+- **Streaming Platforms**: Spotify, Apple Music, SoundCloud links
+- **Social Media**: Instagram, Twitter/X, TikTok, YouTube connectivity
+- **Audio Hosting**: Direct MP3 serving with download capabilities
 
 ### Development Tools
-- **TypeScript**: Type safety across the entire stack
-- **Tailwind CSS**: Utility-first CSS framework
-- **Vite**: Fast build tool and development server
-- **ESBuild**: Fast JavaScript bundling for production
-
-### Third-party Integrations
-- **Google Analytics**: User behavior tracking
-- **Streaming Platforms**: Spotify, Apple Music, SoundCloud integration
-- **SendGrid**: Email delivery service
-- **Vercel**: Hosting and serverless functions
+- **Build System**: Vite for frontend bundling and ESBuild for backend
+- **Type Safety**: TypeScript across all layers with Zod validation
+- **Code Quality**: ESLint and PostCSS for consistent styling
 
 ## Deployment Strategy
 
-### Deployment Strategy
-- **Express Server**: Single unified backend serving API and static assets
-- **Static Assets**: Served from client build output and assets folder
-- **API Routes**: Express routes handling all `/api/*` endpoints
-- **Environment**: Node.js with Express.js framework
+The application supports multiple deployment environments:
 
-### Build Process
-1. **Frontend Build**: Vite compiles React app to static assets
-2. **Backend Build**: ESBuild bundles Express server for serverless deployment
-3. **Database Migrations**: Drizzle handles schema migrations
-4. **Asset Optimization**: Automatic optimization of images and code splitting
+### Production Setup
+- **Process Manager**: PM2 with clustering and auto-restart capabilities
+- **Static Assets**: Direct file serving for music and images
+- **Environment**: Production-optimized builds with minification
 
-### Performance Optimizations
-- **Code Splitting**: Automatic route-based code splitting
-- **Asset Optimization**: Vite handles asset bundling and optimization
-- **Caching**: Appropriate cache headers for static assets
-- **Serverless**: Reduced cold start times with optimized bundle sizes
+### Platform Support
+- **Windows IIS**: Complete PowerShell automation scripts for IIS deployment
+- **Apache**: Configuration guides for Linux server deployment
+- **SSL/HTTPS**: Let's Encrypt integration for secure connections
 
-The architecture prioritizes developer experience with TypeScript throughout, fast development cycles with Vite, and production performance with serverless deployment on Vercel.
+### Development Workflow
+- **Hot Reloading**: Vite development server with Express API proxy
+- **Database Migrations**: Drizzle Kit for schema management
+- **Asset Management**: Public directory structure for organized file serving
+
+The architecture prioritizes performance for audio streaming, SEO optimization for music discovery, and maintainable code organization for ongoing development.
